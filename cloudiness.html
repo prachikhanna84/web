@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Bootstrap Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand latitude" href="./landing.html">Latitude</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./maxtemperature.html">Max. Temperature</a>
+          <a class="dropdown-item" href="./humidity.html">Humidity</a>
+          <a class="dropdown-item" href="./cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="./windspeed.html">Wind Speed</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./comparison.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./data.html">Data</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class="container-fluid">
+    <main>
+      <div class="row">
+        <div class="col-md-8 post">
+          <div>
+            <h3>Cloudiness </h3>
+            <hr />
+            <div class="floated">
+            <img src="./Resources/assets/images/Fig1.png" style="width:100%">
+            </div>
+            <p>
+                The cloud cover for each city was recorded as a percentage and was then graphed relative to the city's
+              latitude. Results are found in the scatter plot above.
+
+              There a very loose correlation of cloudiness v. latitude. However, there does seem to be a correlation
+              between cloudiness and humidity. As humidity increases, cloudiness increases. This makes sense based on
+              how clouds form. Clouds form due to particulate matter in the air combined with water vapor. Generally,
+              clouds get larger/greater in number with proportional to in humidity (or water vapor in the atmosphere).
+              Assuming a homogeneous mixture of particulate matter in the atmosphere, coupled with the fact that there
+              is greater humidity in the northern hemisphere, it makes sense that there is a higher percentage of
+              observable clouds in the northern hemisphere.
+              </p>
+            </div>
+        </div>
+        <div class="col-md-3 visual">
+          <h3>Visualizations</h3>
+          <hr />
+          <div class="row">
+            <div class="col-md-6 col-sm-3 ">
+              <p>
+                <a href="./maxtemperature.html">
+                  <img src="./Resources/assets/images/Fig1.png" style="width:100%">
+                </a>
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-3 ">
+              <p>
+                <a href="./humidity.html">
+                  <img src="./Resources/assets/images/Fig2.png" style="width:100%">
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-3 ">
+              <p>
+                <a href="./cloudiness.html">
+                  <img src="./Resources/assets/images/Fig3.png" style="width:100%">
+                </a>
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-3 ">
+              <p>
+                <a href="./windspeed.html">
+                  <img src="./Resources/assets/images/Fig4.png" style="width:100%">
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </main>
+  </div>
+  <footer class="footer">
+      @ Copyright Coding Bootcamp 2017
+    </div>
+  </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,128 @@
+/* Giving our navbar some padding and a background color */
+
+.navbar {
+  padding: unset!important;
+  background: white;
+  margin-bottom: 15px;
+  
+}
+
+.navbar-nav{
+  flex-direction:unset!important;
+
+}
+
+.nav-item{
+  margin-right: 16px;
+}
+
+body {
+  background: lightgrey!important;
+}
+
+.post {
+  padding: 20px;
+  background: white;
+  margin-right: 25px;
+    /* margin: 1px 1px 1px 1px; */
+}
+
+.visual {
+  padding: 20px;
+  background: white;
+  /* margin: 1px 1px 1px 1px; */
+  margin-bottom: 50px
+}
+
+img {
+  width: 120%;
+  height: 100%;
+}
+
+h2 {
+  background: rgb(45, 172, 129);
+  color: white;
+}
+
+h6 {
+  color: rgb(45, 172, 129);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(45, 172, 129);
+}
+
+.latitude{
+  background-color: rgb(45, 172, 129);
+  color: white !important;
+  margin-left: 20px;
+  margin-top: 1px;
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  /* margin: none; */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: gray;
+  padding: 16px;
+  text-align: center;
+  color: white;
+  border-top: 4px solid rgb(45, 172, 129);
+}
+
+.row {
+  padding: 20px;
+}
+
+.floated {
+  float: left;
+  width: 25%;
+}
+
+.data{
+  padding: 20px;
+  background: white;
+  margin-left: 150px;
+  margin-right: 20px;
+}
+
+.comparison{
+  padding: 20px;
+  background: white;
+  /* margin-left: 150px;
+  margin-right: 20px; */
+  margin-bottom: 20px;
+}
+
+td{
+  padding: 8px!important;
+  text-align: right;
+}
+td:nth-child(2),td:nth-child(4) ,td:nth-child(5) {
+  text-align: left;
+}
+
+@media (min-width: 0px) and (max-width: 688px) {
+  footer {
+    /* display: none; */
+    visibility: hidden!important;
+  }
+
+  .post {
+    margin: 1px 1px 1px 1px;
+  }
+
+  .visual {
+    margin-bottom: none;
+  }
+
+  img {
+    width: 60%;
+    height: 50%;
+  }
+}
